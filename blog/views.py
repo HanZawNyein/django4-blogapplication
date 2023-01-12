@@ -1,22 +1,36 @@
-from django.shortcuts import render, get_object_or_404
-from django.http import Http404
-from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
-# Create your views here.
+"""Class Based Views"""
+from django.views.generic import ListView
+
 from .models import Post
+class PostListView(ListView):
+    """Alternative post list view"""
+    queryset = Post.published.all()
+    context_object_name = 'posts'
+    paginate_by = 1
+    template_name = 'blog/post/list.html'
+
+
+"""Function Based Views"""
+
+from django.shortcuts import render, get_object_or_404
+# from django.http import Http404
+# from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
+# # Create your views here.
+# from .models import Post
 
 
 
-def post_list(request):
-    post_list = Post.published.all()
-    paginatior = Paginator(post_list,1)
-    page_number = request.GET.get('page',1)
-    try:
-        posts = paginatior.page(page_number)
-    except EmptyPage:
-        posts = paginatior.page(paginatior.num_pages)
-    except PageNotAnInteger:
-        posts = paginatior.page(1)
-    return render(request, 'blog/post/list.html', {'posts': posts})
+# def post_list(request):
+#     post_list = Post.published.all()
+#     paginatior = Paginator(post_list,1)
+#     page_number = request.GET.get('page',1)
+#     try:
+#         posts = paginatior.page(page_number)
+#     except EmptyPage:
+#         posts = paginatior.page(paginatior.num_pages)
+#     except PageNotAnInteger:
+#         posts = paginatior.page(1)
+#     return render(request, 'blog/post/list.html', {'posts': posts})
 
 
 def post_detail(request, year, month, day, post):

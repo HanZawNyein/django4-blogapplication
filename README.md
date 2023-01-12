@@ -11,3 +11,4 @@
 - Modifying the canonical URL for posts
 - Adding pagination
 - Handling pagination errors
+- Building class-based views
