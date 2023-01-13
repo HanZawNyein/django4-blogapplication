@@ -19,3 +19,4 @@
 
 ### Extending Your Blog Application
  - Adding the tagging functionality
+ - Retrieving posts by similarity
