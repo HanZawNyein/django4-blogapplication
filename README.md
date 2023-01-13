@@ -14,3 +14,5 @@
 - Building class-based views
 - Recommending posts by email
     - Creating forms with Django
+    - Sending emails in views
+- Creating a comment system
