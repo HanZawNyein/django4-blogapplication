@@ -16,3 +16,6 @@
     - Creating forms with Django
     - Sending emails in views
 - Creating a comment system
+
+### Extending Your Blog Application
+ - Adding the tagging functionality
