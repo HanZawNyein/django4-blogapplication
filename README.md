@@ -25,3 +25,8 @@
     - Creating an inclusion template tag
     - Creating a template tag that returns a QuerySet
     - Implementing custom template filters
+- Adding a sitemap to the site
+- Creating feeds for blog posts
+- Using PostgreSQL
+    - Dumping the existing data
+    - Switching the database in the project
