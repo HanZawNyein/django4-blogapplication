@@ -30,3 +30,6 @@
 - Using PostgreSQL
     - Dumping the existing data
     - Switching the database in the project
+- Simple search lookups
+    - Building a search view
+- SearchVector
