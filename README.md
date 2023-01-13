@@ -10,5 +10,7 @@
 - Modifying the views
 - Modifying the canonical URL for posts
 - Adding pagination
-- Handling pagination errors
+    - Handling pagination errors
 - Building class-based views
+- Recommending posts by email
+    - Creating forms with Django
