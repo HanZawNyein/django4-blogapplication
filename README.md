@@ -35,3 +35,4 @@
 - Stemming and ranking results
 - Stemming and removing stop words in different languages
 - Weighting queries
+- Searching with trigram similarity
