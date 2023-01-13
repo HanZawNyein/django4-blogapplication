@@ -33,3 +33,5 @@
 - Simple search lookups
     - Building a search view (SearchVector)
 - Stemming and ranking results
+- Stemming and removing stop words in different languages
+- Weighting queries
