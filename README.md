@@ -25,3 +25,14 @@
     - Creating an inclusion template tag
     - Creating a template tag that returns a QuerySet
     - Implementing custom template filters
+- Adding a sitemap to the site
+- Creating feeds for blog posts
+- Using PostgreSQL
+    - Dumping the existing data
+    - Switching the database in the project
+- Simple search lookups
+    - Building a search view (SearchVector)
+- Stemming and ranking results
+- Stemming and removing stop words in different languages
+- Weighting queries
+- Searching with trigram similarity
